@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - E-Learning</title>
+    <meta
+      name="description"
+      content="Explore thousands of online courses to master new skills and advance your career with E-Learning." />
+    <meta property="og:title" content="Courses - E-Learning" />
+    <meta
+      property="og:description"
+      content="Explore thousands of online courses to master new skills and advance your career with E-Learning." />
+    <meta
+      property="og:url"
+      content="https://homework004-alpha.vercel.app/courses" />
+    <meta property="og:site_name" content="E-Learning" />
+    <meta
+      property="og:image"
+      content="../assets/images/webdeveloper_cource.jpg" />
+    <meta property="og:image:alt" content="E-Learning Platform" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Courses - E-Learning" />
+    <meta
+      name="twitter:description"
+      content="Explore thousands of online courses to master new skills and advance your career with E-Learning." />
+    <meta
+      name="twitter:image"
+      content="../assets/images/webdeveloper_cource.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon" />
+  </head>
+  <body class="min-h-screen flex flex-col antialiased">
+    <header class="sticky top-0 z-50 bg-blue-100 shadow-md">
+      <nav
+        class="container mx-auto max-w-7xl flex flex-wrap items-center justify-between p-4"
+        aria-label="Main navigation">
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="../assets/images/logo.png" alt="Logo" class="w-10 h-10" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-black"
+            >E-Learning</span
+          >
+        </a>
+        <input
+          id="menu-toggle"
+          type="checkbox"
+          class="hidden peer"
+          aria-label="Toggle navigation menu"
+          title="Toggle navigation menu" />
+        <label
+          for="menu-toggle"
+          class="cursor-pointer md:hidden block"
+          aria-label="Open main menu"
+          title="Open main menu">
+          <svg
+            class="w-6 h-6 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <ul
+          class="flex-col mt-4 space-y-2 md:space-y-0 md:mt-0 md:flex-row md:flex md:space-x-6 md:items-center hidden peer-checked:flex bg-blue-100 md:bg-transparent absolute md:static left-0 right-0 top-full md:top-auto p-4 md:p-0 z-40">
+          <li>
+            <a href="../index.html" class="hover:text-blue-600 text-black"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="cources.html" class="hover:text-blue-600 text-black"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-blue-600 text-black"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-blue-600 text-black"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-600 text-black">Resources</a>
+          </li>
+          <li class="md:hidden">
+            <a href="#" class="block py-2 text-black hover:text-blue-600"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 mt-2 text-white bg-blue-600 rounded hover:bg-blue-700"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+        <div class="hidden md:flex items-center">
+          <a href="#" class="mr-4 hover:text-blue-600 text-black">Log in</a>
+
+          <a
+            href="#"
+            class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
+            >Sign up</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="min-h-screen flex-grow">
+      <section class="bg-blue-600 py-12 text-center text-white">
+        <h1 class="mb-2 text-3xl font-bold">Explore Our Courses</h1>
+        <p class="text-lg">
+          Browse our extensive course database to master new skills and advance
+          your career.
+        </p>
+      </section>
+
+      <section class="container mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex flex-col gap-4 md:flex-row">
+          <div class="relative w-full">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <i class="fas fa-search text-blue-600"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Search courses..."
+              class="w-full rounded-lg border border-gray-300 p-2.5 pl-10 text-sm focus:border-blue-500 focus:ring-blue-500"
+              aria-label="Search courses" />
+          </div>
+          <button
+            class="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-700">
+            Search
+          </button>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+          <aside class="rounded-lg bg-blue-100 p-4 md:col-span-1">
+            <h2 class="mb-4 font-semibold text-gray-900">Filters</h2>
+            <div class="space-y-4">
+              <div>
+                <h3 class="mb-2 font-semibold">Categories</h3>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="mr-2"
+                    aria-label="Development" />
+                  Development
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="Business" />
+                  Business
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="Marketing" />
+                  Marketing
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="mr-2"
+                    aria-label="Data Science" />
+                  Data Science
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="mr-2"
+                    aria-label="IT & Software" />
+                  IT &nbump; Software
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="Design" />
+                  Design
+                </label>
+              </div>
+              <div>
+                <h3 class="mb-2 font-semibold">Level</h3>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="Beginner" />
+                  Beginner
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="mr-2"
+                    aria-label="Intermediate" />
+                  Intermediate
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="Advanced" />
+                  Advanced
+                </label>
+              </div>
+              <div>
+                <h3 class="mb-2 font-semibold">Price Range</h3>
+                <input
+                  type="range"
+                  min="0"
+                  max="300"
+                  class="w-full"
+                  aria-label="Price Range" />
+                <p class="text-sm text-gray-600">$0 - $300</p>
+              </div>
+              <div>
+                <h3 class="mb-2 font-semibold">Rating</h3>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="4.5 & up" />
+                  4.5 &nbump; up
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2" aria-label="4.0 & up" />
+                  4.0 &nbump; up
+                </label>
+              </div>
+              <button
+                class="w-full rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+                Apply Filters
+              </button>
+            </div>
+          </aside>
+          <div class="md:col-span-3">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <article class="rounded-lg bg-white p-6 shadow-md">
+                <img
+                  src="../assets/images/ai.png"
+                  alt="AI Fundamentals for Beginners"
+                  class="mb-4 h-48 w-full object-cover rounded" />
+                <h3 class="text-xl font-semibold text-gray-900">
+                  AI Fundamentals for Beginners
+                </h3>
+                <p class="mb-4 text-gray-600">
+                  Introduction to artificial intelligence and its applications
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-yellow-500">★★★★☆ (180)</span>
+                  <span class="font-bold text-gray-900">$69.99</span>
+                </div>
+                <button
+                  class="mt-4 w-full rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+                  View Course
+                </button>
+              </article>
+
+              <article class="rounded-lg bg-white p-6 shadow-md">
+                <img
+                  src="../assets/images/ux_ui.png"
+                  alt="Advanced UI Design Techniques"
+                  class="mb-4 h-48 w-full object-cover rounded" />
+                <h3 class="text-xl font-semibold text-gray-900">
+                  Advanced UI Design Techniques
+                </h3>
+                <p class="mb-4 text-gray-600">
+                  Master advanced techniques for creating stunning user
+                  interfaces
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-yellow-500">★★★★☆ (150)</span>
+                  <span class="font-bold text-gray-900">$84.99</span>
+                </div>
+                <button
+                  class="mt-4 w-full rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+                  View Course
+                </button>
+              </article>
+
+              <article class="rounded-lg bg-white p-6 shadow-md">
+                <img
+                  src="../assets/images/webdeveloper_cource.jpg"
+                  alt="Frontend Development with React"
+                  class="mb-4 h-48 w-full object-cover rounded" />
+                <h3 class="text-xl font-semibold text-gray-900">
+                  Frontend Development with React
+                </h3>
+                <p class="mb-4 text-gray-600">
+                  Build dynamic web applications using React and modern
+                  JavaScript
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-yellow-500">★★★★☆ (300)</span>
+                  <span class="font-bold text-gray-900">$99.99</span>
+                </div>
+                <button
+                  class="mt-4 w-full rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+                  View Course
+                </button>
+              </article>
+            </div>
+            <div class="mt-6 text-center">
+              <button class="rounded bg-gray-200 px-4 py-2 hover:bg-gray-300">
+                Load More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white" style="background-color: #0f1e3d">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row md:justify-between gap-8">
+          <div class="flex-1 mb-8 md:mb-0">
+            <a href="index.html" class="flex items-center mb-4 space-x-3">
+              <img
+                src="../assets/images/logo.png"
+                alt="Logo"
+                class="w-10 h-10" />
+
+              <span class="text-2xl font-semibold">E-Learning</span>
+            </a>
+            <p class="mb-4">
+              Empowering learners worldwide with quality education and skills
+              for the future.
+            </p>
+            <address class="not-italic space-y-1 text-sm">
+              <p>
+                <strong>Address:</strong> St 562, Phnom Penh 12151, Cambodia.
+              </p>
+              <p><strong>Business Hours:</strong> Mon-Fri: 8:00 AM - 5:00 PM</p>
+              <p><strong>Saturday:</strong> Closed</p>
+              <p><strong>Sunday:</strong> Closed</p>
+              <p><strong>Phone:</strong> +855 (0) 99 246-866</p>
+              <p>
+                <strong>Email:</strong>
+                <a
+                  href="mailto:info.istad@gmail.com"
+                  class="underline hover:text-blue-300"
+                  >info.istad@gmail.com</a
+                >
+              </p>
+            </address>
+          </div>
+          <div class="flex-1 grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-4 text-sm font-semibold uppercase">Resources</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="../index.html" class="hover:text-blue-300">Home</a>
+                </li>
+
+                <li>
+                  <a href="cources.html" class="hover:text-blue-300">Courses</a>
+                </li>
+
+                <li>
+                  <a href="about.html" class="hover:text-blue-300">About Us</a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="hover:text-blue-300">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-4 text-sm font-semibold uppercase">Courses</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="hover:text-blue-300">Web Development</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-300">Data Science</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-300">UX/UI Design</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-4 text-sm font-semibold uppercase">Legal</h2>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="hover:text-blue-300">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-blue-300"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-700" />
+        <div class="flex flex-col sm:flex-row items-center justify-between">
+          <span class="text-sm text-gray-400"
+            >© 2025 <a href="index.html" class="hover:underline">E-Learning</a>.
+            All Rights Reserved.</span
+          >
+
+          <div class="flex mt-4 space-x-6 sm:mt-0">
+            <a
+              href="https://www.facebook.com/istad.co"
+              class="text-gray-400 hover:text-blue-300"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-blue-300"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-blue-300"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+
+            <a
+              href="#"
+              class="text-gray-400 hover:text-blue-300"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
